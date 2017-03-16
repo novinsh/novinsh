@@ -6,13 +6,89 @@
     <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
     <style>
       body {
-        font-family: 'Arvo', serif;
+        padding, margin: 0;
       }
+
+      .container {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: xx-large;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+      }
+
+      .title {
+        font-family: 'Arvo', serif;
+        /*display: block;
+        position: relative;*/
+        letter-spacing: 10px;
+        background-color: white;
+        display: inline-block;
+        margin: 0 auto;
+        /*top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);*/
+      }
+
+      #cover_links {
+        list-style-type: none;
+        text-align: center;
+        bottom: 0;
+        font-size: small;
+        margin-top: 15px;
+      }
+
+      #cover_links ul {
+        padding: 0;
+        margin: 0 auto;
+        width: 80%;
+      }
+
+      #cover_links ul li {
+          display: inline;
+      }
+
+      #cover_links ul li:after {
+        content: "/"; 
+        padding: 0 .5em;
+      }
+
+      #cover_links ul li:last-child:after {
+          content: ''; 
+      }
+
+      a {
+        text-decoration: none;
+        letter-spacing: 1px;
+        color: #303030;
+      }
+
+      a:hover {
+        color: #aaaaaa;
+
+      }
+
     </style>
   </head>
 
   <body>
-    <p>Novin Shahroudi</p>
+    <div class="container">
+      <div style="background-color:white;">
+        <div class="title">Novin Shahroudi</div>
+      </div>
+      <div id="cover_links">
+        <ul>
+          <li><a href="https://ir.linkedin.com/in/novinshahroudi">linkedin</a></li>
+          <li><a href="https://github.com/novinsh">github</a></li>
+          <li><a href="stackoverflow.com/users/1394108/novin-shahroudi">stackoverflow</a></li>
+          <li><a href="facebook.com/novinsh">facebook</a></li>
+          <li><a href="twitter.com/novinsh">twitter</a></li>
+        </ul>
+      </div>
+    </div>
   </body>
 
 </html>

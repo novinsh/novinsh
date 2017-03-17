@@ -1,15 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <title>Novin Shahroudi's Personal Webpage</title>
+    <meta name="author" content="Novin Shahroudi">
+    <meta name="description" content="Personal Web Page">
 
     <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+
     <style>
-      body {
+      html, body {
         padding, margin: 0;
       }
 
-      .container {
+      main {
         text-align: center;
         text-transform: uppercase;
         font-size: xx-large;
@@ -20,7 +24,7 @@
         transform: translate(-50%, -50%);
       }
 
-      .title {
+      header {
         font-family: 'Arvo', serif;
         /*display: block;
         position: relative;*/
@@ -33,7 +37,7 @@
         transform: translate(-50%, -50%);*/
       }
 
-      #cover_links {
+      footer {
         list-style-type: none;
         text-align: center;
         bottom: 0;
@@ -41,22 +45,22 @@
         margin-top: 15px;
       }
 
-      #cover_links ul {
+      footer ul {
         padding: 0;
         margin: 0 auto;
         width: 55%;
       }
 
-      #cover_links ul li {
+      footer ul li {
           display: inline;
       }
 
-      #cover_links ul li:after {
+      footer ul li:after {
         content: "/"; 
         padding: 0 .5em;
       }
 
-      #cover_links ul li:last-child:after {
+      footer ul li:last-child:after {
           content: ''; 
       }
 
@@ -71,15 +75,51 @@
 
       }
 
+      address {
+        font-size: x-small;
+        background-color: #eaeaea;
+        width:140px;
+        height: 14px;
+        margin: 0 auto;
+      }
+
+      h1 {
+        margin: 0;
+        padding: 0;
+        font-size: xx-large;
+        font-weight: normal;
+      }
+
+      @media screen and (min-width: 530px) {
+        address {
+          margin-right: -20px;
+        }
+      }
+
+      @media screen and (max-width: 300px) {
+        h1 {
+          font-size: large;
+          font-weight: normal;
+        }
+
+        address {
+          margin-bottom: 20px;
+        }
+      }
+
     </style>
   </head>
 
   <body>
-    <div class="container">
-      <div style="background-color:white;">
-        <div class="title">Novin Shahroudi</div>
-      </div>
-      <div id="cover_links">
+    <main>
+      <header>
+        <address>
+          <a href="https://goo.gl/maps/G8ZXv47bxDA2">@36.3213147,50.0361692</a>
+        </address>
+        <h1>Novin Shahroudi</h1>
+      </header>
+
+      <footer>
         <ul>
           <li><a href="https://ir.linkedin.com/in/novinshahroudi">linkedin</a></li>
           <li><a href="https://github.com/novinsh">github</a></li>
@@ -95,8 +135,8 @@
           <li><a href="https://www.pinterest.com/novinsh/">pinterest</a></li>
           <li><a href="https://www.flickr.com/photos/novinsh/">flicker</a></li>
         </ul>
-      </div>
-    </div>
+      <footer>
+    </main>
   </body>
 
 </html>

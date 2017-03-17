@@ -89,7 +89,7 @@ footer {
 
 footer p {
   display: inline-block;
-
+  margin-top: 0;
 }
 
 footer address {

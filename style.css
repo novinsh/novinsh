@@ -37,6 +37,7 @@ section {
   font-size: small;
   margin-top: 15px;
   display: none;
+  font-family: monospace;
 }
 
 section ul {

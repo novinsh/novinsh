@@ -128,18 +128,18 @@ footer address {
 }
 
 #social-media {
-  display: none;
+  display: none !important;
 }
 
 #about {
-  display: none;
+  display: none !important;
   margin: 0 auto;
   margin-top: 20px;
   text-align: left;
 }
 
 #projects {
-  display: none;
+  display: none !important;
   margin: 0 auto;
   margin-top: 20px;
   height: 500px;

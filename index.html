@@ -23,7 +23,8 @@
       <header>
         <h1>Novin Shahroudi</h1>
       </header>
-      <!-- links on web -->
+      
+      <!-- menu -->
       <section id="menu">
         <ul>
           <li><a id="about-button" href="#">About</a></li>
@@ -35,12 +36,14 @@
         </ul>
       </section>
 
+      <!-- about me -->
       <section id="about">
         <p>I am currently studying MS in Computer Science at University of Tartu in Estonia.
         I am interested in multi-agent systems and machine learning.
         </p> 
       </section>
 
+      <!-- projects -->
       <!--
       <section id="projects">
         <div class="project-item"> 
@@ -71,7 +74,7 @@
       </section>
       -->
 
-      <!-- links on web -->
+      <!-- social media -->
       <section id="social-media">
         <ul>
           <li><a href="https://ir.linkedin.com/in/novinshahroudi">linkedin</a></li>
@@ -95,7 +98,7 @@
       <address>
         <a href="https://goo.gl/maps/G8ZXv47bxDA2">@36.3213147,50.0361692</a>
       </address>
-      <p> / last modified on 22 Jan, 2018</p>
+      <p> / last modified on <span id="last-update">22 Jan, 2018</span></p>
     </footer>
 
   </body>
@@ -104,27 +107,32 @@
   <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="last_modification.js"></script>
   <script>
     $(document).ready(function(){
-      $("#social-media-button").click(function(){
-        $("#projects").slideUp();
-        $("#about").slideUp();
-        $("#social-media").slideToggle();
-      });
-
+      // TODO: handle toggling better!
+      // toggle about
       $("#about-button").click(function(){
         $("#projects").slideUp();
         $("#social-media").slideUp();
         $("#about").slideToggle();         
       });
       
+      // toggle projects
       $("#projects-button").click(function(){
         $("#social-media").slideUp();
         $("#about").slideUp();
         $("#projects").slideToggle();
       });
 
+      // toggle the social media 
+      $("#social-media-button").click(function(){
+        $("#projects").slideUp();
+        $("#about").slideUp();
+        $("#social-media").slideToggle();
+      });
     });
+
   </script>
 
 </html>

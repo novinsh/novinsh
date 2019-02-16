@@ -23,7 +23,6 @@
       <header>
         <h1>Novin Shahroudi</h1>
       </header>
-      
       <!-- menu -->
       <section id="menu">
         <ul>
@@ -32,19 +31,25 @@
           <!--<li><a href="#">Activities</a></li>-->
           <li><a href="http://novinsh.github.io/blog">Blog</a></li>
           <li id="social-media-button"><a href="#">Social Media</a></li>
-          <li><a href="files/novin-shahroudi-cv.pdf">CV</a></li>
+          <li id="cv-button"><a href="http://docs.google.com/gview?url=https://novinsh.github.io/files/novin-shahroudi-cv.pdf">CV</a></li>
         </ul>
       </section>
-
+    
       <!-- about me -->
-      <section id="about">
-        <p>I am currently studying MS in Computer Science at University of Tartu in Estonia.
-        I am interested in multi-agent systems and machine learning.
+      <section id="about" class="content1">
+        <p>I am currently studying MS in "Computer Science, <a
+          href="https://en.wikipedia.org/wiki/Data_science" target="blank">Data Science</a>" at the
+        <a href="http://ut.ee"  target="blank">University of Tartu</a> in <a href="https://goo.gl/maps/6NS6HJm8bCz">Estonia</a>.
+        Practicing <a href="https://en.wikipedia.org/wiki/Deep_learning" target="blank">Deep Learning</a> in different fields with interest in practical and
+        fundamental <a href="https://en.wikipedia.org/wiki/Artificial_intelligence" target="blank">AI</a>, <a
+          href="https://en.wikipedia.org/wiki/Machine_learning" target="blank">ML</a>, <a
+          href="https://en.wikipedia.org/wiki/Reinforcement_learning" target="blank">RL</a> and <a
+          href="https://en.wikipedia.org/wiki/Multi-agent_system" target="blank">MAS</a>.
         </p> 
       </section>
 
       <!-- projects -->
-      <section id="projects" class="scrollbar">
+      <section id="projects" class="scrollbar content1">
          <!--<a href="">-->
             <!--<div class="project-item"> -->
               <!--<h2>project</h2>-->
@@ -131,7 +136,7 @@
               <h2>Multi-agent Cooperation of Robots in RoboCup SPL</h2>
               <img src="images/projects/project.png" width="100px"/>
               <p>Design and Implementation of Behavior Control System of Nao robot in soccer game using
-              Hierarchical Finite State Machines (HFSM) implemented using C++. Voting and time-optimal
+              in C++. Voting and time-optimal
               task assignment and behavioral algorithms.<br>[Nao Humanoid Robot Lab.]</p>
             </div>
         </a>
@@ -161,6 +166,10 @@
         </ul>
       </section>
 
+      <!--<iframe-->
+        <!--src="https://docs.google.com/gview?url=https://novinsh.github.io/files/novin-shahroudi-cv.pdf&embedded=true"-->
+        <!--style="width:100%; height:800px; display:none" frameborder="0" id="cv"></iframe>-->
+
     </main>
 
     <footer>
@@ -185,6 +194,7 @@
       $("#about-button").click(function(){
         $("#projects").slideUp();
         $("#social-media").slideUp();
+        //$("#cv").slideUp();
         $("#about").slideToggle();         
       });
       
@@ -193,14 +203,27 @@
         $("#social-media").slideUp();
         $("#about").slideUp();
         $("#projects").slideToggle();
+        //$("#cv").slideUp();
       });
 
       // toggle the social media 
       $("#social-media-button").click(function(){
         $("#projects").slideUp();
         $("#about").slideUp();
+        //$("#cv").slideUp();
         $("#social-media").slideToggle();
       });
+
+      // toggle the CV
+			/*
+      $("#cv-button").click(function(){
+        $("#projects").slideUp();
+        $("#about").slideUp();
+        $("#social-media").slideUp();
+        $("#cv").slideToggle();
+      });
+			*/
+
     });
 
   </script>

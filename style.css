@@ -14,7 +14,6 @@ main {
   left: 50%;
   width: 100%;
   transform: translate(-50%, -50%);
-  width: 650px;
 }
 
 header {
@@ -40,23 +39,55 @@ section {
   font-family: monospace;
 }
 
-section ul {
+ul {
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  padding-top: 2px;
+}
+
+ul li {
+  display: inline-block;
+}
+
+ul li:after {
+  content: "/"; 
+  padding: 0 .5em;
+}
+
+ul li:last-child:after {
+  content: ''; 
+}
+
+#menu {
+  display: block;
+  background-color: #404040;
+  color: #bbbbbb;
+  padding: 3px;
+}
+
+#menu ul {
   padding: 0;
   margin: 0 auto;
   width: 100%;
 }
 
-section ul li {
+#menu ul li {
   display: inline-block;
 }
 
-section ul li:after {
+#menu ul li:after {
   content: "/"; 
   padding: 0 .5em;
 }
 
-section ul li:last-child:after {
+#menu ul li:last-child:after {
   content: ''; 
+}
+
+
+#menu a {
+  color: #fbfbfb;
 }
 
 a {
@@ -69,8 +100,6 @@ a:hover {
   color: #aaaaaa;
 
 }
-
-
 
 h1 {
   margin: 0;
@@ -112,7 +141,7 @@ footer address {
   margin: 0;
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 350px) {
   h1 {
     font-size: large;
     font-weight: normal;
@@ -134,6 +163,14 @@ footer address {
 
   .project-item p {
     margin: 0;
+  }
+
+  .content1 {
+    width: 98% !important;
+  }
+
+  #about {
+    width: 95%;
   }
 }
 
@@ -159,9 +196,14 @@ footer address {
     height: 50px;
     border-top: 1px solid #00000040;
   }
+  
+  #about {
+    width: 90% !important;
+  }
 
   #projects {
     height: 400px !important;
+    width: 99% !important;
   }
 
   #projects .project-item {
@@ -182,10 +224,6 @@ footer address {
   .scrollbar { -ms-overflow-style: none; }
 }
 
-#menu {
-  display: block;
-}
-
 #social-media {
   display: none;
 }
@@ -193,8 +231,8 @@ footer address {
 #about {
   display: none;
   margin: 0 auto;
-  padding: 20px;
   text-align: left;
+  width: 650px;
 }
 
 #projects {
@@ -203,6 +241,7 @@ footer address {
   margin-top: 20px;
   height: 500px;
   overflow-y: scroll;
+  width: 650px;
   /*background-color: #ff4d4d;*/
 }
 
@@ -217,7 +256,7 @@ footer address {
   float: left;
   width: 95%;
   height: 150px;
-  border: 1px groove #6d6d6d;
+  border: 2px solid #6d6d6d;
   padding: 4px;
   margin: 0px 0px 20px;
   background-color: #efefef1f;
